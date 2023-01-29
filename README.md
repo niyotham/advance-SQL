@@ -10,3 +10,22 @@ Write a query that upon execution, assigns a row number to all managers we have 
 Let the numbering disregard the department the managers have worked in. Also, let it start from the value of 1. Assign that value to the manager with the lowest employee number.
 
  
+```
+# The ROW_NUMBER() Ranking Window Functions - Solution
+
+# Solution #1:
+
+SELECT
+
+    emp_no,
+
+    dept_no,
+
+    ROW_NUMBER() OVER (ORDER BY emp_no) AS row_num
+
+FROM
+
+dept_manager;
+
+
+```
