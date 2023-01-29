@@ -3,7 +3,7 @@ Contained course material about advance MySQL function.
 
 ## Exercises
 
-##3Exercise #1 :
+### Exercise #1 :
 
 Write a query that upon execution, assigns a row number to all managers we have information for in the "employees" database (regardless of their department).
 
